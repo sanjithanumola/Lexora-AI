@@ -1,0 +1,6 @@
+{
+  "name": "AI Law & Order Assistant",
+  "description": "A futuristic cyber-legal dashboard and AI-powered case analyzer assisting with sections of law, punishments, safety guidelines, and legal guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
