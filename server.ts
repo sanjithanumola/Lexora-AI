@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 
@@ -342,9 +343,19 @@ const LOCAL_LEGAL_DATABASE: Record<string, any> = {
   }
 };
 
-// Silently handle favicon requests to maintain pristine web-console diagnostics
+// Dynamically resolve and serve the actual favicon to maintain pristine web-console diagnostics
 app.get("/favicon.ico", (req, res) => {
-  res.status(204).end();
+  const publicPath = path.join(process.cwd(), "public", "favicon.png");
+  const distPath = path.join(process.cwd(), "dist", "favicon.png");
+  if (fs.existsSync(distPath)) {
+    res.setHeader("Content-Type", "image/png");
+    res.sendFile(distPath);
+  } else if (fs.existsSync(publicPath)) {
+    res.setHeader("Content-Type", "image/png");
+    res.sendFile(publicPath);
+  } else {
+    res.status(204).end();
+  }
 });
 
 // Main API handler to analyze situations using Gemini
