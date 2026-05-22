@@ -163,3 +163,188 @@ export const FAQS: FAQItem[] = [
     category: "Cyber Banking"
   }
 ];
+
+export const LOCAL_LEGAL_DATABASE: Record<string, any> = {
+  cyber: {
+    relevantSections: [
+      {
+        section: "Section 66D of Information Technology Act",
+        title: "Punishment for Cheating by Personation using Computer Resource",
+        explanation: "Applies to online identity theft, fake profiles, WhatsApp/social media scams, and phishing where someone impersonates another to cheat.",
+        punishment: "Imprisonment of up to 3 years",
+        fineAmount: "Up to ₹1,00,000 / $1,500",
+        legalProtections: ["Protection against unauthorized digital profiling", "Right to immediate digital content blocking"]
+      },
+      {
+        section: "Section 43 of IT Act",
+        title: "Penalty and Compensation for Damage to Computer, Computer System, etc.",
+        explanation: "Deals with unauthorized access, hacking, downloading/copying data without permission, or inserting viruses into digital systems.",
+        punishment: "Civil liability for damages (payment of compensation directly to the victim)",
+        fineAmount: "Full compensation for proven financial damage",
+        legalProtections: ["Right to file claim before the cyber adjudicating officer"]
+      }
+    ],
+    legalSteps: [
+      "Secure screenshots, IP logs, email headers, and chat transcripts of the incident.",
+      "Register a formal online complaint at the national Cyber Crime portal or your local Cyber Cell helpline.",
+      "Notify your bank or credit agency immediately if financial assets or cards are compromised.",
+      "Report and freeze the offensive account directly on the hosting application platform."
+    ],
+    recommendedActions: [
+      "Do NOT delete any chats, call logs, or evidence; keep digital copies on an offline drive.",
+      "Change all master credentials immediately and enroll in secure Multi-Factor Authentication (MFA).",
+      "Draft a digital compromise report and submit it through the online FIR assistant."
+    ],
+    safetyTips: [
+      "Never reveal One-Time Passwords (OTPs), private banking URLs, or personal tokens over communication calls.",
+      "Verify domains and SSL certificates before entering login credentials in browser fields."
+    ],
+    caseSummary: "CYBER COMPROMISE DETECTED: The situation involves potential digital identity fraud, hacking, or online deception. Electronic evidence must be frozen immediately to secure prosecution."
+  },
+  theft: {
+    relevantSections: [
+      {
+        section: "Section 378 & 379 of IPC / BNS standard",
+        title: "Theft & Punishment for Theft",
+        explanation: "Moving movable property out of the possession of any person without that person's consent with dishonest intent.",
+        punishment: "Imprisonment of up to 3 years",
+        fineAmount: "Discretionary fine based on goods value",
+        legalProtections: ["Right to recovery of stolen goods through court superdari process", "Presumption of innocence until guilt proven"]
+      }
+    ],
+    legalSteps: [
+      "Visit the jurisdiction police station immediately to file an First Information Report (FIR).",
+      "Attach physical proof of ownership, serial numbers, photographs, or invoice records of the stolen items.",
+      "Obtain an official copy of the signed and stamped FIR from the Officer-in-Charge free of cost."
+    ],
+    recommendedActions: [
+      "Inquire with nearby properties to locate working CCTV footage that may have recorded the incident.",
+      "Submit the FIR copy immediately to your insurance carrier to initiate a property claim flow."
+    ],
+    safetyTips: [
+      "Keep digital backups of serial keys and legal purchase invoices secured in your cloud storage vaults.",
+      "Avoid disclosing travel logs or long-term absence parameters publicly on social feeds."
+    ],
+    caseSummary: "THEFT OF PROPERTY: Moving physical goods without authorized consent constitutes Theft. Establishing a chronological timeline and getting a signed police FIR is critically urgent."
+  },
+  harassment: {
+    relevantSections: [
+      {
+        section: "Section 354D of IPC / BNS Code 78",
+        title: "Stalking (Physical or Electronic)",
+        explanation: "Following a woman, contacting or attempting to contact her to foster personal interaction repeatedly despite a clear indication of disinterest, or monitoring her internet usage.",
+        punishment: "Imprisonment of up to 3 years (first conviction) or 1 to 5 years (subsequent)",
+        fineAmount: "Applicable court fine",
+        legalProtections: ["Right to absolute digital privacy", "Protection of identity in cyber harassment cases", "Right to file FIR through a female police officer"]
+      },
+      {
+        section: "Section 509 of IPC",
+        title: "Word, gesture or act intended to insult the modesty of a woman",
+        explanation: "Uttering any word, making any sound or gesture, or exhibiting any object, intending that such word/sound is heard or gesture seen by a woman to insult modesty.",
+        punishment: "Simple imprisonment of up to 3 years",
+        fineAmount: "Judicial fine",
+        legalProtections: ["Protection against hostile public or professional working spaces"]
+      }
+    ],
+    legalSteps: [
+      "Document the times, locations, words, or digital messages. Take secure screenshots immediately.",
+      "You have the absolute right to register a Zero FIR at any police station, regardless of territorial jurisdiction.",
+      "Submit a formal complaint to the National Commission for Women (NCW) or specialized Cyber Cells."
+    ],
+    recommendedActions: [
+      "Involve a trusted guardian, workplace internal compliance officer, or specialized legal counsel.",
+      "Immediately change privacy settings to prevent public tracing or cyber monitoring of online posts."
+    ],
+    safetyTips: [
+      "Utilize emergency speed-dial links or safety alert apps. Keep national women safety helpline numbers active.",
+      "Be vigilant about sharing real-time location tagging markers on digital social media dashboards."
+    ],
+    caseSummary: "INTIMIDATION & HARASSMENT DETECTED: This issue represents a threat to personal peace, dignity, or electronic safety. Law guarantees fast-track protection pathways and immediate police intervention."
+  },
+  traffic: {
+    relevantSections: [
+      {
+        section: "Section 184 of Motor Vehicles (Amendment) Act",
+        title: "Punishment for Dangerous Driving",
+        explanation: "Driving a vehicle at a speed or in a manner containing danger to the public, taking into account traffic, geographical curves, and environmental status.",
+        punishment: "Imprisonment from 6 months up to 1 year, or suspension of operator license",
+        fineAmount: "₹1,000 to ₹5,000 depending on repeat counts",
+        legalProtections: ["Right to demand a certified device-calibration report when speed-guns are used", "Right to a formal court hearing rather than immediate guilt admission"]
+      },
+      {
+        section: "Section 185 of Motor Vehicles Act",
+        title: "Driving by a Drunken Person or Under the Influence of Drugs",
+        explanation: "Operating a motor vehicle while active blood alcohol level exceeds 30mg per 100ml of blood as detected by breath analyzer.",
+        punishment: "Imprisonment of up to 6 months (first offence), up to 2 years (subsequent)",
+        fineAmount: "₹10,000 (first offence) or ₹15,000 (subsequent)",
+        legalProtections: ["Right to check breathalyzer sanitation status", "Right to request medical blood-draw validation within 2 hours"]
+      }
+    ],
+    legalSteps: [
+      "Examine the official digital challan or notice for correct license plate number and visual accuracy.",
+      "Pay through the authenticated Government cyber portal, or choose to contest it in the specialized traffic court."
+    ],
+    recommendedActions: [
+      "Keep high-resolution photographic logs of the physical signages and traffic environment if cited unfairly.",
+      "Keep a clean certified digital copy of the license, tax insurance receipt, and emission test records on your device."
+    ],
+    safetyTips: [
+      "Always verify dashcam telemetry and install clean recording hardware to safeguard your driving logs.",
+      "Never pay cash fines directly to street officers without demanding a printed computer-generated e-challan receipt."
+    ],
+    caseSummary: "VEHICULAR LAW ASSESSMENT: Moving violations and safety citations are strictly regulated by transit codes. Evidence audits play a vital role in contesting discrepancies."
+  },
+  property: {
+    relevantSections: [
+      {
+        section: "Section 441 & 447 of Criminal Code / IPC",
+        title: "Criminal Trespass & Penalty",
+        explanation: "Entering into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy.",
+        punishment: "Imprisonment of up to 3 months",
+        fineAmount: "₹500 / Court-declared penalty",
+        legalProtections: ["Right to clean quiet enjoyment of lease premises", "Protection against illegal forceful eviction without due litigation flow"]
+      }
+    ],
+    legalSteps: [
+      "Collate copy of registered deeds, sales contracts, lease papers, tax receipts, or mutation records.",
+      "Serve a formal written Legal Notice signed by an advocate to the contesting party.",
+      "File for a Permanent Injunction or recovery of possession in the competent civil court."
+    ],
+    recommendedActions: [
+      "Avoid engaging in loud physical confrontations; set up clear secure boundaries around your boundaries.",
+      "File a police complaint immediately for criminal trespass if locks are broken or boundaries are crossed unlawfully."
+    ],
+    safetyTips: [
+      "Always run comprehensive legal title searches at the registrar office before transferring financial purchase tokens.",
+      "Never accept loose verbal promises for rental extensions; always formalize registered written agreements."
+    ],
+    caseSummary: "PROPERTY DISPUTE: Real estate and residential tenancy are bound strictly to statutory registrations. Forceful entry or possession altering is illegal."
+  },
+  default: {
+    relevantSections: [
+      {
+        section: "Section 420 of IPC / BNS Section 318",
+        title: "Cheating and Dishonestly Inducing Delivery of Property",
+        explanation: "Simple cheating, fraudulent misrepresentation, or deceitful tactics to induce any person to deliver property or make/destroy valuable securities.",
+        punishment: "Imprisonment of up to 7 years",
+        fineAmount: "Financial restitution or fine determined by court",
+        legalProtections: ["Right to bail under reasonable terms", "Protection of fundamental civil freedoms during investigations"]
+      }
+    ],
+    legalSteps: [
+      "Consult a registered attorney or public defender immediately to map local state rules.",
+      "Collect all written agreements, invoices, text logs, and payment transfers.",
+      "Draft a neat chronologically styled legal statement of fact for the official complaint dossier."
+    ],
+    recommendedActions: [
+      "Never sign documents or liability releases under duress or without expert neutral legal supervision.",
+      "Register an online portal petition or a notice of dispute to formalize the timeline of conflict."
+    ],
+    safetyTips: [
+      "Review terms of services, end-user licensing policies, and contract clauses thoroughly before locking agreements.",
+      "Always maintain strict compliance records and transparent written receipts of financial operations."
+    ],
+    caseSummary: "GENERAL JURIDICAL EVALUATION: The matter touches upon potential breach of trust, contractual deception, or civil friction. Methodical paperwork remains your prime legal anchor."
+  }
+};
+
