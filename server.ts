@@ -14,6 +14,17 @@ app.use((req, res, next) => {
   next();
 });
 
+// Robust CORS & OPTIONS preflight support to bypass browser iframe boundary blocks
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+  next();
+});
+
 app.use(express.json());
 
 // Lazy-initialized Google GenAI client
@@ -226,6 +237,11 @@ const LOCAL_LEGAL_DATABASE: Record<string, any> = {
     caseSummary: "GENERAL JURIDICAL EVALUATION: The matter touches upon potential breach of trust, contractual deception, or civil friction. Methodical paperwork remains your prime legal anchor."
   }
 };
+
+// Silently handle favicon requests to maintain pristine web-console diagnostics
+app.get("/favicon.ico", (req, res) => {
+  res.status(204).end();
+});
 
 // Main API handler to analyze situations using Gemini
 app.post("/api/analyze-case", async (req, res) => {
